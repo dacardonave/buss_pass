@@ -35,15 +35,15 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  padding: 16px;
+  padding: 0 16px;
   box-sizing: border-box;
-  flex: 1;
+  margin-top: 12px;
 }
 
 .qr-container img {
-  width: 120px;
+  width: 140px;
   height: auto;
-  max-width: 28vw;
+  max-width: 30vw;
   cursor: pointer;
 }
 
@@ -52,8 +52,8 @@ body {
   padding: 12px;
   border-radius: 16px;
   text-align: center;
-  width: 110px;
-  height: 110px;
+  width: 140px;
+  height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,44 +61,43 @@ body {
 }
 
 .month {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: bold;
   line-height: 1.2;
 }
 
 .year {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: bold;
   line-height: 1.2;
 }
 
 .title {
   color: red;
-  font-size: 22px;
-  margin-top: 8px;
+  font-size: 24px;
+  margin-top: 12px;
   text-align: center;
   font-weight: bold;
 }
 
 .zone-box {
   background: radial-gradient(white, lightgray);
-  padding: 20px 0;
+  padding: 30px 0;
   border-radius: 12px;
-  margin: 8px auto;
+  margin: 16px auto;
   text-align: center;
   width: 90%;
   max-width: 500px;
-  flex: 1;
 }
 
 .zones-number {
-  font-size: 64px;
+  font-size: 72px;
   font-weight: bold;
   line-height: 1;
 }
 
 .zones-label {
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1;
   font-weight: bold;
 }
@@ -113,7 +112,7 @@ body {
 }
 
 .clock {
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   font-weight: bold;
 }
@@ -121,7 +120,7 @@ body {
 .bars {
   display: flex;
   margin-top: 8px;
-  height: 24px;
+  height: 28px;
   width: 90%;
   max-width: 500px;
 }
@@ -132,7 +131,7 @@ body {
 }
 
 .expiration {
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 8px;
   text-align: center;
   font-weight: bold;
@@ -159,26 +158,29 @@ body {
 
 @media screen and (max-width: 500px) {
   .zones-number {
-    font-size: 14vw;
+    font-size: 15vw;
   }
   .zones-label {
-    font-size: 6vw;
+    font-size: 7vw;
   }
   .month, .year {
-    font-size: 6.5vw;
+    font-size: 7vw;
   }
   .title {
-    font-size: 6vw;
+    font-size: 6.5vw;
   }
   .qr-container img,
   .month-box-inner {
-    width: 24vw;
-    height: 24vw;
+    width: 28vw;
+    height: 28vw;
   }
   .month-box-inner {
     padding: 2vw;
   }
   .clock, .expiration {
-    font-size: 5vw;
+    font-size: 5.5vw;
+  }
+  .bars {
+    height: 6vw;
   }
 }
