@@ -75,24 +75,28 @@ body {
 .title {
   color: red;
   font-size: 24px;
-  margin-top: 8px;
+  margin: 0 auto;
+  margin-top: 12px;
+  margin-bottom: -12px;
   text-align: center;
   font-weight: bold;
+  z-index: 1;
 }
 
 .zone-box {
   background: radial-gradient(white, lightgray);
-  padding: 30px 0;
+  padding: 20px 0;
   border-radius: 12px;
-  margin: 24px auto;
   text-align: center;
-  width: 90%;
-  max-width: 500px;
-  height: 10vh;
+  width: 100%;
+  height: 50vh;
+  max-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  margin: 0;
 }
 
 .zones-number {
@@ -173,6 +177,7 @@ body {
   }
   .title {
     font-size: 6.5vw;
+    margin-bottom: -3vw;
   }
   .qr-container img,
   .month-box-inner {
@@ -189,6 +194,6 @@ body {
     height: 6vw;
   }
   .zone-box {
-    height: 28vh;
+    height: 50vh;
   }
 }
