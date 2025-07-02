@@ -149,7 +149,7 @@ body {
 
 .expiration {
   font-size: 20px;
-  margin-top: 8px;
+  margin-top: 0px;
   text-align: center;
   font-weight: bold;
 }
@@ -175,7 +175,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .zones-number {
-    font-size: 16vw;
+    font-size: 20vw;
   }
   .zones-label {
     font-size: 6.5vw;
