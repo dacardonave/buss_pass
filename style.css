@@ -39,10 +39,11 @@ body {
 }
 
 .qr-container img {
-  width: 80px;
+  width: 100px;
   height: auto;
   max-width: 24vw;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .month-box-inner {
@@ -50,8 +51,8 @@ body {
   padding: 8px;
   border-radius: 12px;
   text-align: center;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,13 +60,13 @@ body {
 }
 
 .month {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   line-height: 1.2;
 }
 
 .year {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   line-height: 1.2;
 }
@@ -75,6 +76,7 @@ body {
   font-size: 18px;
   margin-top: 8px;
   text-align: center;
+  font-weight: bold;
 }
 
 .zone-box {
@@ -88,13 +90,13 @@ body {
 }
 
 .zones-number {
-  font-size: 48px;
+  font-size: 56px;
   font-weight: bold;
   line-height: 1;
 }
 
 .zones-label {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1;
 }
 
@@ -144,24 +146,24 @@ body {
 
 @media screen and (max-width: 500px) {
   .zones-number {
-    font-size: 12vw;
+    font-size: 13vw;
   }
   .zones-label {
-    font-size: 5vw;
+    font-size: 5.5vw;
   }
   .month {
-    font-size: 5vw;
+    font-size: 6vw;
   }
   .year {
-    font-size: 5vw;
+    font-size: 6vw;
   }
   .title {
-    font-size: 5vw;
+    font-size: 5.5vw;
   }
   .qr-container img,
   .month-box-inner {
-    width: 20vw;
-    height: 20vw;
+    width: 22vw;
+    height: 22vw;
   }
   .month-box-inner {
     padding: 2vw;
