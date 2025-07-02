@@ -48,7 +48,7 @@ body {
 }
 
 .month-box-inner {
-  background: radial-gradient(white, lightgray);
+  background: radial-gradient(white 20%, gray 80%);
   padding: 12px;
   border-radius: 16px;
   text-align: center;
@@ -77,36 +77,35 @@ body {
   font-size: 24px;
   margin: 0 auto;
   margin-top: 12px;
-  margin-bottom: -12px;
+  margin-bottom: 4px;
   text-align: center;
   font-weight: bold;
   z-index: 1;
 }
 
 .zone-box {
-  background: radial-gradient(white, lightgray);
-  padding: 20px 0;
+  background: radial-gradient(white 20%, gray 80%);
+  padding: 4px 0;
   border-radius: 12px;
   text-align: center;
-  width: 100%;
-  height: 50vh;
-  max-height: 50vh;
+  width: 90%;
+  height: 1.5cm;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 .zones-number {
-  font-size: 72px;
+  font-size: 42px;
   font-weight: bold;
   line-height: 1;
 }
 
 .zones-label {
-  font-size: 26px;
+  font-size: 18px;
   line-height: 1;
   font-weight: bold;
 }
@@ -167,17 +166,17 @@ body {
 
 @media screen and (max-width: 500px) {
   .zones-number {
-    font-size: 15vw;
+    font-size: 10vw;
   }
   .zones-label {
-    font-size: 7vw;
+    font-size: 5vw;
   }
   .month, .year {
     font-size: 7vw;
   }
   .title {
     font-size: 6.5vw;
-    margin-bottom: -3vw;
+    margin-bottom: 3vw;
   }
   .qr-container img,
   .month-box-inner {
@@ -194,6 +193,6 @@ body {
     height: 6vw;
   }
   .zone-box {
-    height: 50vh;
+    height: 1.5cm;
   }
 }
