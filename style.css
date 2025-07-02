@@ -1,25 +1,36 @@
 /* === style.css === */
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+html, body {
   margin: 0;
-  font-family: 'SF Pro Text', Helvetica, Arial, sans-serif;
+  padding: 0;
+  height: 100%;
+  font-family: 'SF Pro Text', 'Roboto', Helvetica, Arial, sans-serif;
   background-color: white;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pass-container {
   width: 100vw;
-  max-width: 600px;
-  margin: auto;
+  height: 100vh;
   padding: 4vw;
-  text-align: center;
   box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .row {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 4vw;
 }
 
 .qr-container {
