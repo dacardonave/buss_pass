@@ -21,7 +21,6 @@ body {
   height: 100vh;
   padding: 4vw;
   box-sizing: border-box;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -69,15 +68,16 @@ body {
 
 .title {
   color: red;
-  font-size: 3.5vw;
-  margin-top: 4vw;
+  font-size: 4.5vw;
+  margin: 2vw auto 0 auto;
+  text-align: center;
 }
 
 .zone-box {
   background: radial-gradient(white, lightgray);
   padding: 3vw 0;
   border-radius: 1vw;
-  margin: 4vw auto 0;
+  margin: 2vw auto;
   text-align: center;
 }
 
@@ -87,24 +87,25 @@ body {
 }
 
 .zones-number {
-  font-size: 8vw;
+  font-size: 9vw;
   font-weight: bold;
   line-height: 1;
 }
 
 .zones-label {
-  font-size: 4vw;
+  font-size: 4.5vw;
   line-height: 1;
 }
 
 .clock, .countdown {
   font-size: 3.5vw;
-  margin: 3vw 0 1vw 0;
+  margin: 2vw 0 1vw 0;
+  text-align: center;
 }
 
 .bars {
   display: flex;
-  margin-top: 4vw;
+  margin-top: 2vw;
   height: 5vw;
 }
 
@@ -115,7 +116,8 @@ body {
 
 .expiration {
   font-size: 3.5vw;
-  margin-top: 3vw;
+  margin-top: 2vw;
+  text-align: center;
 }
 
 .qr-popup {
@@ -148,6 +150,12 @@ body {
     font-size: 6vw;
   }
   .title {
-    font-size: 5vw;
+    font-size: 6vw;
+  }
+  .qr-container img {
+    width: 20vw;
+  }
+  .month-box-inner {
+    width: 24vw;
   }
 }
