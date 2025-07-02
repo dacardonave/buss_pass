@@ -49,11 +49,11 @@ body {
 
 .month-box-inner {
   background: radial-gradient(white 20%, gray 80%);
-  padding: 12px;
+  padding: 16px;
   border-radius: 16px;
   text-align: center;
-  width: 140px;
-  height: 140px;
+  width: 180px;
+  height: 180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,13 +61,13 @@ body {
 }
 
 .month {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
   line-height: 1.2;
 }
 
 .year {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
   line-height: 1.2;
 }
@@ -89,7 +89,7 @@ body {
   border-radius: 12px;
   text-align: center;
   width: 90%;
-  height: 1.5cm;
+  height: 3cm;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -172,7 +172,7 @@ body {
     font-size: 5vw;
   }
   .month, .year {
-    font-size: 7vw;
+    font-size: 8vw;
   }
   .title {
     font-size: 6.5vw;
@@ -180,8 +180,8 @@ body {
   }
   .qr-container img,
   .month-box-inner {
-    width: 28vw;
-    height: 28vw;
+    width: 32vw;
+    height: 32vw;
   }
   .month-box-inner {
     padding: 2vw;
@@ -193,6 +193,6 @@ body {
     height: 6vw;
   }
   .zone-box {
-    height: 1.5cm;
+    height: 3cm;
   }
 }
