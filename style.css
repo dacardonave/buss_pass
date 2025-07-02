@@ -9,6 +9,7 @@ html, body {
   font-family: 'SF Pro Text', 'Roboto', Helvetica, Arial, sans-serif;
   background-color: white;
   overflow: hidden;
+  font-weight: bold;
 }
 
 body {
@@ -25,7 +26,7 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -36,23 +37,23 @@ body {
   width: 100%;
   padding: 16px;
   box-sizing: border-box;
+  flex: 1;
 }
 
 .qr-container img {
-  width: 100px;
+  width: 120px;
   height: auto;
-  max-width: 24vw;
+  max-width: 28vw;
   cursor: pointer;
-  font-weight: bold;
 }
 
 .month-box-inner {
   background: radial-gradient(white, lightgray);
-  padding: 8px;
-  border-radius: 12px;
+  padding: 12px;
+  border-radius: 16px;
   text-align: center;
-  width: 90px;
-  height: 90px;
+  width: 110px;
+  height: 110px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,20 +61,20 @@ body {
 }
 
 .month {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: bold;
   line-height: 1.2;
 }
 
 .year {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: bold;
   line-height: 1.2;
 }
 
 .title {
   color: red;
-  font-size: 18px;
+  font-size: 22px;
   margin-top: 8px;
   text-align: center;
   font-weight: bold;
@@ -81,35 +82,46 @@ body {
 
 .zone-box {
   background: radial-gradient(white, lightgray);
-  padding: 16px 0;
-  border-radius: 8px;
+  padding: 20px 0;
+  border-radius: 12px;
   margin: 8px auto;
   text-align: center;
   width: 90%;
   max-width: 500px;
+  flex: 1;
 }
 
 .zones-number {
-  font-size: 56px;
+  font-size: 64px;
   font-weight: bold;
   line-height: 1;
 }
 
 .zones-label {
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1;
+  font-weight: bold;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 12px 0;
+  width: 100%;
 }
 
 .clock {
-  font-size: 16px;
-  margin-top: 12px;
+  font-size: 18px;
   text-align: center;
+  font-weight: bold;
 }
 
 .bars {
   display: flex;
   margin-top: 8px;
-  height: 20px;
+  height: 24px;
   width: 90%;
   max-width: 500px;
 }
@@ -120,9 +132,10 @@ body {
 }
 
 .expiration {
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 8px;
   text-align: center;
+  font-weight: bold;
 }
 
 .qr-popup {
@@ -146,26 +159,26 @@ body {
 
 @media screen and (max-width: 500px) {
   .zones-number {
-    font-size: 13vw;
+    font-size: 14vw;
   }
   .zones-label {
-    font-size: 5.5vw;
-  }
-  .month {
     font-size: 6vw;
   }
-  .year {
-    font-size: 6vw;
+  .month, .year {
+    font-size: 6.5vw;
   }
   .title {
-    font-size: 5.5vw;
+    font-size: 6vw;
   }
   .qr-container img,
   .month-box-inner {
-    width: 22vw;
-    height: 22vw;
+    width: 24vw;
+    height: 24vw;
   }
   .month-box-inner {
     padding: 2vw;
+  }
+  .clock, .expiration {
+    font-size: 5vw;
   }
 }
