@@ -7,24 +7,29 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="pass-container">
-    <div class="row">
-      <div class="month-box">
-        <div class="month-box-inner">
-          <div class="month">JUL<br>2025</div>
-        </div>
-      </div>
-      <div class="qr-container">
-        <img id="qr" src="qr_code.png" alt="QR Code"/>
+<div class="pass-container">
+  <div class="title">BUS INTERSTATE PASS</div>
+
+  <!-- ZONE BOX PRIMERO -->
+  <div class="zone-box">
+    <div class="zones-number">3</div>
+    <div class="zones-label">ZONES</div>
+  </div>
+
+  <!-- LUEGO FILA DE FECHA Y QR -->
+  <div class="row">
+    <div class="month-box">
+      <div class="month-box-inner">
+        <div class="month">JUN</div>
+        <div class="year">2025</div>
       </div>
     </div>
-
-    <div class="title">BUS INTERSTATE PASS</div>
-
-    <div class="zone-box full-width">
-      <div class="zones-number">3</div>
-      <div class="zones-label">ZONES</div>
+    <div class="qr-container">
+      <img src="qr.png" alt="QR Code" onclick="toggleQR()" />
     </div>
+  </div>
+
+  <!-- RESTO DEL CONTENIDO -->
 
     <div class="clock" id="clock">Loading time...</div>
 
