@@ -175,13 +175,13 @@ body {
 
 @media screen and (max-width: 500px) {
   .zones-number {
-    font-size: 14vw;
+    font-size: 16vw;
   }
   .zones-label {
     font-size: 6.5vw;
   }
   .month, .year {
-    font-size: 14vw;
+    font-size: 10vw;
   }
   .title {
     font-size: 6.5vw;
