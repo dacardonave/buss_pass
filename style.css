@@ -1,0 +1,142 @@
+/* === style.css === */
+body {
+  margin: 0;
+  font-family: 'SF Pro Text', Helvetica, Arial, sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.pass-container {
+  width: 100vw;
+  max-width: 600px;
+  margin: auto;
+  padding: 4vw;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4vw;
+}
+
+.qr-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 25vw;
+}
+
+.qr-container img {
+  width: 22vw;
+  max-width: 100px;
+  cursor: pointer;
+}
+
+.month-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 25vw;
+}
+
+.month-box-inner {
+  background: radial-gradient(white, lightgray);
+  padding: 2vw;
+  border-radius: 1vw;
+  text-align: center;
+  width: 20vw;
+}
+
+.month {
+  font-size: 4vw;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.title {
+  color: red;
+  font-size: 3.5vw;
+  margin-top: 4vw;
+}
+
+.zone-box {
+  background: radial-gradient(white, lightgray);
+  padding: 3vw 0;
+  border-radius: 1vw;
+  margin: 4vw auto 0;
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.zones-number {
+  font-size: 8vw;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.zones-label {
+  font-size: 4vw;
+  line-height: 1;
+}
+
+.clock, .countdown {
+  font-size: 3.5vw;
+  margin: 3vw 0 1vw 0;
+}
+
+.bars {
+  display: flex;
+  margin-top: 4vw;
+  height: 5vw;
+}
+
+.bar {
+  flex: 1;
+  transition: background-color 0.5s ease;
+}
+
+.expiration {
+  font-size: 3.5vw;
+  margin-top: 3vw;
+}
+
+.qr-popup {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(255,255,255,0.95);
+  border: 2px solid #333;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.qr-popup img {
+  width: 90%;
+  height: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .zones-number {
+    font-size: 12vw;
+  }
+  .zones-label {
+    font-size: 6vw;
+  }
+  .month {
+    font-size: 6vw;
+  }
+  .title {
+    font-size: 5vw;
+  }
+}
