@@ -20,8 +20,8 @@
       margin-top: 12px;
     }
     .month-box-inner, .qr-container img {
-      width: 4cm;
-      height: 4cm;
+      width: 3.5cm;
+      height: 3.5cm;
       object-fit: cover;
     }
     .zones-section {
@@ -60,8 +60,10 @@
     }
     function updateClock() {
       const now = new Date();
+      const options = { weekday: 'short', month: 'short', day: 'numeric' };
+      const dateString = now.toLocaleDateString(undefined, options);
       const timeString = now.toLocaleTimeString();
-      document.getElementById('clock').textContent = timeString;
+      document.getElementById('clock').textContent = `${dateString} ${timeString}`;
 
       const expiration = new Date();
       expiration.setMinutes(expiration.getMinutes() + 5);
@@ -81,7 +83,7 @@
         </div>
       </div>
       <div class="qr-container">
-        <img src="qr_code.png" alt="QR Code" onclick="toggleQR()" />
+        <img src="qr.png" alt="QR Code" onclick="toggleQR()" />
       </div>
     </div>
 
@@ -104,7 +106,7 @@
     </div>
 
     <div class="qr-popup" id="qrPopup">
-      <img src="qr.png" alt="QR Code Enlarged">
+      <img src="qr_code.png" alt="QR Code Enlarged">
     </div>
   </div>
 </body>
