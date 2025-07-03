@@ -48,7 +48,7 @@ body {
 }
 
 .month-box-inner {
-  background: radial-gradient(white 20%, yellow 80%);
+  background: linear-gradient(to right, red 0%, white 50%, red 100%);
   padding: 16px;
   border-radius: 16px;
   text-align: center;
@@ -84,7 +84,7 @@ body {
 }
 
 .zone-box {
-  background: radial-gradient(white 20%, yellow 80%);
+  background: linear-gradient(to right, red 0%, white 50%, red 100%);
   padding: 4px 0;
   border-radius: 12px;
   text-align: center;
