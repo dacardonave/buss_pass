@@ -19,10 +19,15 @@
       box-sizing: border-box;
       margin-top: 12px;
     }
-    .month-box-inner, .qr-container img {
-      background: radial-gradient(white 20%, red 80%)
-      width: 3.5cm;
-      height: 3.5cm;
+    .month-box-inner {
+      width: 5cm;
+      height: 5cm;
+      object-fit: cover;
+      background: radial-gradient(white 20%, red 80%);
+    }
+    .qr-container img {
+      width: 5cm;
+      height: 5cm;
       object-fit: cover;
     }
     .zones-section {
@@ -52,6 +57,13 @@
       justify-content: center;
       align-items: center;
       margin-top: 0;
+    }
+    .bars {
+      display: flex;
+      margin-top: 8px;
+      height: 0.5cm;
+      width: 90%;
+      max-width: 500px;
     }
   </style>
   <script>
