@@ -1,38 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Transit Pass</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
 <div class="pass-container">
   <div class="title">BUS INTERSTATE PASS</div>
 
-  <!-- ZONE BOX PRIMERO -->
+  <div class="row">
+    <div class="month-box">
+      <div class="month-box-inner">
+        <div class="month">JUL</div>
+        <div class="year">2025</div>
+      </div>
+    </div>
+    <div class="qr-container">
+      <img src="qr.png" alt="QR Code" onclick="toggleQR()" />
+    </div>
+  </div>
+
   <div class="zone-box">
     <div class="zones-number">3</div>
     <div class="zones-label">ZONES</div>
   </div>
 
-    <div class="clock" id="clock">Loading time...</div>
-
+  <div class="bottom-section">
+    <div class="clock" id="clock">--:--:--</div>
     <div class="bars">
-      <div class="bar" id="bar1"></div>
-      <div class="bar" id="bar2"></div>
-      <div class="bar" id="bar3"></div>
+      <div class="bar" style="background-color: red;"></div>
+      <div class="bar" style="background-color: blue;"></div>
+      <div class="bar" style="background-color: green;"></div>
     </div>
-
-    <div class="expiration" id="countdown">Loading countdown...</div>
+    <div class="expiration" id="expiration">Expires: --</div>
   </div>
 
-  <div id="qr-popup" class="qr-popup">
-    <img src="qr_code.png" alt="QR Enlarged"/>
-    
+  <div class="qr-popup" id="qrPopup">
+    <img src="qr.png" alt="QR Code Enlarged">
   </div>
-
-  <script src="script.js"></script>
-  
-</body>
-</html>
+</div>
