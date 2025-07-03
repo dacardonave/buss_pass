@@ -22,7 +22,12 @@
     .month-box-inner {
       width: 4cm;
       height: 4cm;
-      object-fit: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 16px;
+      text-align: center;
       background: linear-gradient(to right, red 0%, white 50%, red 100%);
     }
     .qr-container img {
@@ -46,7 +51,7 @@
       font-weight: bold;
     }
     .zone-box {
-      background: linear-gradient(to right, red 0%, white 50%, red 100%);
+      background: linear-gradient(to right, gray 0%, white 50%, gray 100%);
       padding: 4px 0;
       border-radius: 12px;
       text-align: center;
@@ -61,7 +66,7 @@
     .bars {
       display: flex;
       margin-top: 8px;
-      height: 0.3cm;
+      height: 0.5cm;
       width: 90%;
       max-width: 500px;
     }
@@ -78,9 +83,13 @@
       const timeString = now.toLocaleTimeString();
       document.getElementById('clock').textContent = `${dateString} ${timeString}`;
 
-      const expiration = new Date();
-      expiration.setMinutes(expiration.getMinutes() + 5);
-      document.getElementById('expiration').textContent = 'Expires: ' + expiration.toLocaleTimeString();
+      const year = now.getFullYear();
+      const month = now.getMonth();
+      const lastDay = new Date(year, month + 1, 0).getDate();
+      const today = now.getDate();
+      const remainingDays = lastDay - today;
+
+      document.getElementById('expiration').textContent = 'Days left this month: ' + remainingDays;
     }
     setInterval(updateClock, 1000);
     window.onload = updateClock;
