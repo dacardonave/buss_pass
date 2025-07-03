@@ -1,34 +1,67 @@
-<div class="pass-container">
-  <div class="title">BUS INTERSTATE PASS</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Transit Pass</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon.png">
+  <meta name="theme-color" content="#ffffff" />
+  <script>
+    function toggleQR() {
+      const popup = document.getElementById('qrPopup');
+      popup.style.display = popup.style.display === 'flex' ? 'none' : 'flex';
+    }
+    function updateClock() {
+      const now = new Date();
+      const timeString = now.toLocaleTimeString();
+      document.getElementById('clock').textContent = timeString;
 
-  <div class="row">
-    <div class="month-box">
-      <div class="month-box-inner">
-        <div class="month">JUL</div>
-        <div class="year">2025</div>
+      const expiration = new Date();
+      expiration.setMinutes(expiration.getMinutes() + 5);
+      document.getElementById('expiration').textContent = 'Expires: ' + expiration.toLocaleTimeString();
+    }
+    setInterval(updateClock, 1000);
+    window.onload = updateClock;
+  </script>
+</head>
+<body>
+  <div class="pass-container">
+    <div class="title">BUS INTERSTATE PASS</div>
+
+    <div class="row">
+      <div class="month-box">
+        <div class="month-box-inner">
+          <div class="month">JUN</div>
+          <div class="year">2025</div>
+        </div>
+      </div>
+      <div class="qr-container">
+        <img src="qr.png" alt="QR Code" onclick="toggleQR()" />
       </div>
     </div>
-    <div class="qr-container">
-      <img src="qr.png" alt="QR Code" onclick="toggleQR()" />
+
+    <div class="zone-box">
+      <div class="zones-number">3</div>
+      <div class="zones-label">ZONES</div>
+    </div>
+
+    <div class="bottom-section">
+      <div class="clock" id="clock">--:--:--</div>
+      <div class="bars">
+        <div class="bar" style="background-color: red;"></div>
+        <div class="bar" style="background-color: blue;"></div>
+        <div class="bar" style="background-color: green;"></div>
+      </div>
+      <div class="expiration" id="expiration">Expires: --</div>
+    </div>
+
+    <div class="qr-popup" id="qrPopup">
+      <img src="qr.png" alt="QR Code Enlarged">
     </div>
   </div>
-
-  <div class="zone-box">
-    <div class="zones-number">3</div>
-    <div class="zones-label">ZONES</div>
-  </div>
-
-  <div class="bottom-section">
-    <div class="clock" id="clock">--:--:--</div>
-    <div class="bars">
-      <div class="bar" style="background-color: red;"></div>
-      <div class="bar" style="background-color: blue;"></div>
-      <div class="bar" style="background-color: green;"></div>
-    </div>
-    <div class="expiration" id="expiration">Expires: --</div>
-  </div>
-
-  <div class="qr-popup" id="qrPopup">
-    <img src="qr.png" alt="QR Code Enlarged">
-  </div>
-</div>
+</body>
+</html>
