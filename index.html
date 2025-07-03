@@ -10,6 +10,49 @@
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="icon.png">
   <meta name="theme-color" content="#ffffff" />
+  <style>
+    .top-half {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 16px;
+      box-sizing: border-box;
+      margin-top: 12px;
+    }
+    .month-box-inner, .qr-container img {
+      width: 5cm;
+      height: 5cm;
+      object-fit: cover;
+    }
+    .zones-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: 50vh;
+    }
+    .title {
+      color: red;
+      font-size: 24px;
+      margin: 12px auto 4px auto;
+      text-align: center;
+      font-weight: bold;
+    }
+    .zone-box {
+      background: radial-gradient(white 20%, gray 80%);
+      padding: 4px 0;
+      border-radius: 12px;
+      text-align: center;
+      width: 90%;
+      height: 3cm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+    }
+  </style>
   <script>
     function toggleQR() {
       const popup = document.getElementById('qrPopup');
@@ -30,9 +73,7 @@
 </head>
 <body>
   <div class="pass-container">
-    <div class="title">BUS INTERSTATE PASS</div>
-
-    <div class="row">
+    <div class="top-half">
       <div class="month-box">
         <div class="month-box-inner">
           <div class="month">JUN</div>
@@ -44,9 +85,12 @@
       </div>
     </div>
 
-    <div class="zone-box">
-      <div class="zones-number">3</div>
-      <div class="zones-label">ZONES</div>
+    <div class="zones-section">
+      <div class="title">BUS INTERSTATE PASS</div>
+      <div class="zone-box">
+        <div class="zones-number">3</div>
+        <div class="zones-label">ZONES</div>
+      </div>
     </div>
 
     <div class="bottom-section">
